@@ -1,0 +1,129 @@
+[gd_scene load_steps=10 format=3 uid="uid://dc4dqkqesay8j"]
+
+[ext_resource type="PackedScene" uid="uid://nvii2n5xk1ye" path="res://KayKit_DungeonRemastered_1.1_FREE/KayKit_DungeonRemastered_1.1_FREE/Assets/fbx/floor_wood_large.fbx" id="1_tw33l"]
+[ext_resource type="PackedScene" uid="uid://cbcaulik0qj4b" path="res://KayKit_DungeonRemastered_1.1_FREE/KayKit_DungeonRemastered_1.1_FREE/Assets/fbx/floor_wood_large_dark.fbx" id="2_whkkq"]
+[ext_resource type="ArrayMesh" uid="uid://d0av0u42tmljo" path="res://KayKit_DungeonRemastered_1.1_FREE/KayKit_DungeonRemastered_1.1_FREE/Assets/obj/barrier.obj" id="3_u02yf"]
+[ext_resource type="ArrayMesh" uid="uid://ck7u4n0ewc6cv" path="res://KayKit_DungeonRemastered_1.1_FREE/KayKit_DungeonRemastered_1.1_FREE/Assets/obj/floor_tile_big_spikes.obj" id="4_kt6iy"]
+[ext_resource type="ArrayMesh" uid="uid://cfg10kp4fo7pp" path="res://KayKit_DungeonRemastered_1.1_FREE/KayKit_DungeonRemastered_1.1_FREE/Assets/obj/floor_tile_big_spikes_spikes.obj" id="5_gxrrx"]
+[ext_resource type="ArrayMesh" uid="uid://7jc2jefy37to" path="res://KayKit_DungeonRemastered_1.1_FREE/KayKit_DungeonRemastered_1.1_FREE/Assets/obj/floor_wood_small_dark.obj" id="6_8v7ys"]
+[ext_resource type="ArrayMesh" uid="uid://b30fsxe2gu6tc" path="res://KayKit_DungeonRemastered_1.1_FREE/KayKit_DungeonRemastered_1.1_FREE/Assets/obj/barrier_half.obj" id="7_g04iv"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_645fc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wigow"]
+transparency = 4
+albedo_color = Color(0.733333, 0, 0.0627451, 0.168627)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="floor_wood_large" parent="." instance=ExtResource("1_tw33l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.98267, -1.19209e-07, -2.10375)
+
+[node name="floor_wood_large_dark2" parent="." instance=ExtResource("2_whkkq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.03534, 0.0107851, 1.81322)
+
+[node name="floor_wood_large_dark3" parent="." instance=ExtResource("2_whkkq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.04999, 0, -2.12052)
+
+[node name="floor_wood_large2" parent="." instance=ExtResource("1_tw33l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.03731, 0, 1.8109)
+
+[node name="floor_wood_large3" parent="." instance=ExtResource("1_tw33l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.0504, 0, -2.1236)
+
+[node name="floor_wood_large4" parent="." instance=ExtResource("1_tw33l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.98773, 0, 5.84896)
+
+[node name="floor_wood_large5" parent="." instance=ExtResource("1_tw33l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.05377, 0, 5.80802)
+
+[node name="floor_wood_large_dark4" parent="." instance=ExtResource("2_whkkq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0431, 0, 5.79495)
+
+[node name="Barrier" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.62, 0, 0, 0, 0.62, 0, 0, 0, 0.62, -1.90411, 0, 5.86636)
+mesh = ExtResource("3_u02yf")
+
+[node name="Barrier2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.000952226, 0, -0.619999, 0, 0.62, 0, 0.619999, 0, 0.000952226, -1.90411, 0, 5.88019)
+mesh = ExtResource("3_u02yf")
+
+[node name="FloorTileBigSpikes" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.95528, 0.00364292, 1.90382)
+mesh = ExtResource("4_kt6iy")
+
+[node name="FloorTileBigSpikesSpikes" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.60208, -4.76837e-07, -2.17991)
+mesh = ExtResource("5_gxrrx")
+
+[node name="FloorWoodSmallDark" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.04, 0, 0, 0, 0.735, 0, 0, 0, 1.525, -2.12322, 0.0423079, -1.99047)
+mesh = ExtResource("6_8v7ys")
+
+[node name="FloorWoodSmallDark3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0352841, 0, -0.277924, 0, 0.735, 0, 0.0188423, 0, 0.52044, -1.85211, 0.0423079, -1.00932)
+mesh = ExtResource("6_8v7ys")
+
+[node name="FloorWoodSmallDark4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0345044, 0, 0.298462, 0, 0.735, 0, -0.0202347, 0, 0.50894, -2.43493, 0.0423079, -1.01502)
+mesh = ExtResource("6_8v7ys")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 2.0978, 0.286643, 1.54968)
+mesh = SubResource("CapsuleMesh_645fc")
+skeleton = NodePath("")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 1.46136, 0.286643, 2.14645)
+mesh = SubResource("CapsuleMesh_645fc")
+skeleton = NodePath("")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 3.38456, 0.286643, 1.35106)
+mesh = SubResource("CapsuleMesh_645fc")
+skeleton = NodePath("")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -1.47063, 0.286643, 2.49297)
+mesh = SubResource("CapsuleMesh_645fc")
+skeleton = NodePath("")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.50235, 0.286643, 2.71419)
+mesh = SubResource("CapsuleMesh_645fc")
+skeleton = NodePath("")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0.927794, 0.286643, 1.44396)
+mesh = SubResource("CapsuleMesh_645fc")
+skeleton = NodePath("")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 3.81071, 0.286643, 0.00529134)
+mesh = SubResource("CapsuleMesh_645fc")
+skeleton = NodePath("")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -1.00225, 0.286643, -2.2424)
+mesh = SubResource("CapsuleMesh_645fc")
+skeleton = NodePath("")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 3.0723, 0.286643, -1.57568)
+mesh = SubResource("CapsuleMesh_645fc")
+skeleton = NodePath("")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 1.35791, 0.286643, -2.09832)
+mesh = SubResource("CapsuleMesh_645fc")
+skeleton = NodePath("")
+
+[node name="BarrierHalf" type="MeshInstance3D" parent="."]
+transform = Transform3D(6.00708, 0, 0, 0, 0.296473, 0, 0, 0, 4.39183, -3.85012, -9.53674e-07, 1.98029)
+mesh = ExtResource("7_g04iv")
+surface_material_override/0 = SubResource("StandardMaterial3D_wigow")
+
+[node name="BarrierHalf2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.000102425, 0, -4.37004, 0, 0.295, 0, 5.87022, 0, -7.62497e-05, 2.23583, -9.53674e-07, -3.94595)
+mesh = ExtResource("7_g04iv")
+surface_material_override/0 = SubResource("StandardMaterial3D_wigow")
